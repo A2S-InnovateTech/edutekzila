@@ -1,3 +1,108 @@
+/* navbar */
+
+.nav-link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.nav-link:hover {
+  color: #e5c09d;
+  font-size: 24px;
+}
+.nav-link .active {
+  color: #e5c09d;
+}
+
+/* home */
+
+.home-heading-1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+}
+.home-heading-2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 80px;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+}
+.home-row-1 {
+  margin-top: 16%;
+}
+.home-row-2 {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+.home-content-1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+
+  color: #101010;
+}
+.home-content-2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  margin-top: 22%;
+  color: #101010;
+}
+@media (min-width: 500px) and (max-width: 720px) {
+  .home-img {
+    width: 500px !important;
+  }
+  .home-heading-1 {
+    font-size: 50px;
+  }
+  .home-heading-2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 300px) and (max-width: 499px) {
+  .home-img {
+    width: 450px !important;
+  }
+  .home-heading-1 {
+    font-size: 40px;
+  }
+  .home-heading-2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 996px) and (max-width: 1210px) {
+  .home-img {
+    width: 500px !important;
+  }
+  .home-heading-1 {
+    font-size: 40px;
+  }
+  .home-heading-2 {
+    font-size: 40px;
+  }
+}
+
 /* WHY CHOSE US */
 
 .why-chose-us-container {
