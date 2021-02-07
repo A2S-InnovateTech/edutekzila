@@ -27,7 +27,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 60px;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 80px;
   margin-left: 2%;
   display: flex;
@@ -78,21 +78,66 @@
   color: #101010;
 }
 /* Animation */
-.home-heading-1 {
+/* .home-heading-1 {
   animation: animated-text 3s steps(29, end) 1s 1 normal both,
     animated-cursor 1000ms steps(29, end) infinite;
-}
+} */
 
 /* text animation */
 
-@keyframes animated-text {
+/* @keyframes animated-text {
   from {
     width: 0;
   }
   to {
     width: 472px;
   }
+} */
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 8.8em;
+  }
 }
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+
+/* .text_1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+} */
+
+
+
+
+
+
 
 
 /* WHY CHOSE US */
@@ -694,6 +739,7 @@ footer {
     line-height: 40px;
     display: flex;
     align-items: center;
+    width: 100%;
   }
   .home-heading-2 {
     font-family: Raleway;
@@ -706,7 +752,7 @@ footer {
     align-items: left;
   }
   .home-img {
-    width: 100%;
+    width: 100% ;
   }
   .home-row-1 {
     margin-top: 12%;
