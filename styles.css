@@ -31,7 +31,10 @@
   line-height: 60px;
   display: flex;
   align-items: center;
+  /* white-space: nowrap; */
+  overflow: hidden;
 }
+
 .home-heading-2 {
   font-family: Raleway;
   font-style: normal;
@@ -74,6 +77,23 @@
   margin-top: 22%;
   color: #101010;
 }
+/* Animation */
+.home-heading-1 {
+  animation: animated-text 3s steps(29, end) 1s 1 normal both,
+    animated-cursor 1000ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 472px;
+  }
+}
+
 
 /* WHY CHOSE US */
 
@@ -153,7 +173,6 @@
 .our-services-content {
   font-family: Montserrat;
   font-style: normal;
-  width: 50%;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -198,14 +217,7 @@
   border-radius: 8px;
 }
 
-.web-development-logo {
-  width: 93px;
-  height: 82.87px;
-  margin: 43px 77px;
-  margin-bottom: 0px !important;
-}
-
-.web-development-title {
+.our-services-title {
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
@@ -218,7 +230,7 @@
   color: #222222;
 }
 
-.web-development-content {
+.our-service-content {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -231,38 +243,19 @@
 
   color: #000000;
 }
-.app-development-logo {
+
+.web-development-logo {
   width: 93px;
   height: 82.87px;
   margin: 43px 77px;
   margin-bottom: 0px !important;
 }
 
-.app-development-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.app-development-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
+.app-development-logo {
+  width: 93px;
+  height: 82.87px;
+  margin: 43px 77px;
+  margin-bottom: 0px !important;
 }
 
 .graphic-designing-logo {
@@ -272,33 +265,6 @@
   margin-bottom: 0px !important;
 }
 
-.graphic-designing-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.graphic-designing-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
-}
-
 .logo-designing-logo {
   width: 111.72px;
   height: 95.03px;
@@ -306,65 +272,11 @@
   margin-bottom: 0px !important;
 }
 
-.logo-designing-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.logo-designing-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
-}
-
 .logo-designing-logo {
   width: 111.72px;
   height: 95.03px;
   margin: 30px 62px;
   margin-bottom: 0px !important;
-}
-
-.logo-designing-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.logo-designing-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
 }
 
 .seo-logo {
@@ -374,65 +286,11 @@
   margin-bottom: 0px !important;
 }
 
-.seo-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.seo-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
-}
-
 .digital-marketing-logo {
   width: 111.72px;
   height: 95.03px;
   margin: 30px 62px;
   margin-bottom: 0px !important;
-}
-
-.digital-marketing-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.digital-marketing-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
 }
 
 .video-editing-logo {
@@ -442,65 +300,11 @@
   margin-bottom: 0px !important;
 }
 
-.video-editing-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.video-editing-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
-}
-
 .paid-prototype-logo {
   width: 111.72px;
   height: 95.03px;
   margin: 30px 62px;
   margin-bottom: 0px !important;
-}
-
-.paid-prototype-title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  text-align: center;
-  margin: 22px 27px 17px 27px;
-
-  color: #222222;
-}
-
-.paid-prototype-content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 26px;
-
-  color: #000000;
 }
 
 /* Educational services */
@@ -742,10 +546,15 @@
   border-radius: 8px;
   margin: 40px auto 0 auto;
 }
+.contact-box {
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
 /* Footer */
 
 footer {
   margin-top: 12vh;
+  width: 100%;
   background-color: #222222;
   border-radius: 8px;
 }
@@ -764,9 +573,15 @@ footer {
   align-items: center;
   padding: 5px;
   color: #ffffff;
+  transition: all 0.5s ease-in-out !important;
 }
-.col-xs-15,
-.col-sm-15,
+.footer-contact:hover {
+  color: #e5c09d;
+  font-size: 25px;
+  transition: all 0.5s ease-in-out !important;
+}
+/* .col-xs-15,
+.col-sm-15, */
 .col-md-15,
 .col-lg-15 {
   position: relative;
@@ -804,27 +619,31 @@ footer {
   line-height: 26px;
   display: flex;
   align-items: center;
-
+  transition: all 0.5s ease-in-out !important;
   color: #ffffff;
 }
 .footer-navigation:hover {
   font-size: 25px;
+  color: #e5c09d;
+  transition: all 0.5s ease-in-out !important;
 }
 .footer-navigation-row {
   margin-top: 30px;
 }
 .social-media {
-  width: 3vh;
-  height: 3vh;
+  font-size: 1.5rem;
   text-decoration: none;
   margin: 5px;
+  padding: 5px;
+  color: white;
+  transition: all 0.5s ease-in-out !important;
 }
 .social-media:hover {
-  width: 3.5vh;
-  height: 3.5vh;
+  font-size: 2rem;
+  color: #e5c09d;
+  transition: all 0.5s ease-in-out !important;
 }
 .social-media-row {
-  margin-top: 10px;
   padding: 10px;
 }
 .copyright {
@@ -847,7 +666,7 @@ footer {
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 21px;
     display: flex;
     align-items: center;
@@ -1014,6 +833,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
+    font-size: 30px;
     line-height: 42px;
     text-align: center;
     margin-top: 52px;
@@ -1352,7 +1172,6 @@ footer {
   /* Educational services */
 
   .educational-services-container {
-    /* margin-bottom: 7%; */
     padding: 0% !important;
   }
   .educational-services-card {
@@ -1398,7 +1217,6 @@ footer {
 
     color: #000000;
   }
-
   /* REQUEST QUOTE */
 
   .request {
@@ -1427,7 +1245,10 @@ footer {
     line-height: 33px;
     letter-spacing: 0em;
     text-align: center;
+<<<<<<< HEAD
     white-space: nowrap;
+=======
+>>>>>>> b25d51aba72c103191cb18e48bc704775bacaec1
   }
   /* recent projects */
 
@@ -1520,6 +1341,15 @@ footer {
   .follower-count-div {
     margin: 5vh;
   }
+  @media (max-width: 680) and (min-width: 360) {
+    .count-circle {
+      height: 90px !important;
+      width: 90px !important;
+    }
+    .follower-count-heading {
+      font-size: 24px !important;
+    }
+  }
 
   /* Contact us */
 
@@ -1531,8 +1361,8 @@ footer {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bolder;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 35px;
+    line-height: 35px;
     display: flex;
     align-items: center;
     margin-top: 20vh;
@@ -1661,14 +1491,14 @@ footer {
     margin-top: 30px;
   }
   .social-media {
-    width: 3vh;
-    height: 3vh;
+    width: vh;
+    height: 5vh;
     text-decoration: none;
     margin: 10px;
   }
   .social-media:hover {
-    width: 3.5vh;
-    height: 3.5vh;
+    width: 5.5vh;
+    height: 5.5vh;
   }
   .social-media-row {
     margin-top: 10px;
