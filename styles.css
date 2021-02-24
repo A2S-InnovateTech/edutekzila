@@ -26,6 +26,9 @@
   font-weight: 400;
   color: #e5c09d;
 }
+.navbar-brand:hover{
+  color: #e5c09d;
+}
 .navbar-brand-logo{
   width: 60px;
 }
