@@ -52,37 +52,29 @@
 }
 /* home */
 
-.home-heading-1 {
+.home-heading {
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
-  line-height: 60px;
+  line-height: 70px;
   display: flex;
   align-items: center;
-  /* white-space: nowrap; */
   overflow: hidden;
 }
 
-.home-heading-2 {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 80px;
-  margin-left: 2%;
-  display: flex;
-  align-items: left;
+.home-row{
+  margin: 10% 5%;
+  vertical-align: middle;
+  display: table;
 }
-.home-img {
-  width: 100%;
+.home-row-image-1 {
+  width: 50%;
+  float: right !important;
 }
-.home-row-1 {
-  margin-top: 12%;
-}
-.home-row-2 {
-  margin-top: 8%;
-  margin-bottom: 5%;
+.home-row-image-2 {
+  width: 50%;
+  float: left !important;
 }
 .home-content-1 {
   font-family: Montserrat;
@@ -92,7 +84,6 @@
   line-height: 38px;
   display: flex;
   align-items: center;
-
   color: #101010;
 }
 .home-content-2 {
@@ -103,71 +94,29 @@
   line-height: 38px;
   display: flex;
   align-items: center;
-  margin-top: 22%;
   color: #101010;
+  margin-top: 15%;
 }
-/* Animation */
-/* .home-heading-1 {
-  animation: animated-text 3s steps(29, end) 1s 1 normal both,
-    animated-cursor 1000ms steps(29, end) infinite;
-} */
 
-/* text animation */
-
-/* @keyframes animated-text {
-  from {
-    width: 0;
-  }
+.home-content-div {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 0px;
+  width: 50%;
+  display: table-column;
+}
+.flex {
+  display: flex;
+}
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink {
   to {
-    width: 472px;
-  }
-} */
-
-@keyframes typewriter {
-  0%, 100% {
-    width: 0;
-  }
-  20%, 80% {
-    width: 8.8em;
-  }
-}
-
-@keyframes caret {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
     opacity: 0;
   }
 }
-
-.text_1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter;
-  display: inline-block;
-  position: relative;
-  animation-duration: 10s;
-  animation-timing-function: steps(25, end);
-  animation-iteration-count: infinite;
-}
-
-
-/* .text_1::after {
-  content: "|";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: steps(1, end);
-} */
-
-
-
-
-
-
-
 
 /* WHY CHOSE US */
 
@@ -958,43 +907,23 @@ footer {
   }
   /* home */
 
-  .home-heading-1 {
+  .home-heading {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 30px !important;
+    line-height: 60px;
     display: flex;
     align-items: center;
     width: 100%;
   }
-  .home-heading-2 {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 60px;
-    margin-left: 2%;
-    display: flex;
-    align-items: left;
-  }
-  .home-img {
-    width: 100% ;
-  }
-  .home-row-1 {
-    margin-top: 12%;
-  }
-  .home-row-2 {
-    margin-top: 8%;
-    margin-bottom: 5%;
-  }
+  
   .home-content-1 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    display: flex;
     align-items: center;
     padding: 10px;
 
@@ -1004,15 +933,44 @@ footer {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 38px;
-    display: flex;
     align-items: center;
-    margin-top: 22%;
     color: #101010;
     padding: 10px;
   }
-
+  .home-row{
+    margin: 10% 5%;
+    vertical-align: middle;
+    display: table;
+  }
+  .home-row-image-1 {
+    width: 100%;
+  }
+  .home-row-image-2 {
+    width: 100%;
+  }
+  
+  .home-content-div {
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: table-column;
+  }
+  .flex {
+    display: flex;
+  }
+  .blink {
+    animation: blink 0.5s infinite;
+  }
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+  
   /* WHY CHOSE US */
 
   .why-chose-us-container {
