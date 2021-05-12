@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 /******************************************** navbar **********************************************/
 
@@ -25,7 +25,7 @@
 }
 
 .navbar-brand {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 30px !important;
   font-weight: 400;
   color: #e5c09d;
@@ -449,7 +449,7 @@
 .modal-title {
   color: #5f5041;
   margin: 0 auto;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
 }
 
@@ -517,124 +517,75 @@
 
 /******************************** Followers *****************************************************/
 
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
-
-#follower {
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial,
-    sans-serif;
-  font-size: 18px;
-  color: rgb(70, 68, 68);
+.counter-up {
+  min-height: 40vh;
+  padding: 0 50px;
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  margin: 0;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.sectionClass {
-  padding: 20px 0px 50px 0px;
-  position: relative;
-  display: block;
-}
-
-.fullWidth {
-  width: 100% !important;
-  display: table;
-  float: none;
-  padding: 0;
-  min-height: 1px;
-  height: 100%;
-  position: relative;
-}
-
-.projectFactsWrap {
   display: flex;
-  margin-top: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
 }
-
-#projectFacts .fullWidth {
-  padding: 0;
-}
-
-.projectFactsWrap .item {
-  width: 25%;
+.counter-up::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
   height: 100%;
-  padding: 50px 0px;
-  text-align: center;
-}
-
-.projectFactsWrap .item:nth-child(1) {
+  width: 100%;
   background: rgb(16, 31, 46);
 }
-
-.projectFactsWrap .item:nth-child(2) {
-  background: rgb(18, 34, 51);
+.counter-up .content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.projectFactsWrap .item:nth-child(3) {
-  background: rgb(21, 38, 56);
+.counter-up .content .box {
+  width: calc(25% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
 }
-
-.projectFactsWrap .item:nth-child(4) {
-  background: rgb(23, 44, 66);
+.content .box .ico {
+  font-size: 48px;
+  color: #e6e6e6;
 }
-
-.projectFactsWrap .item p.number {
-  font-size: 40px;
-  padding: 0;
-  font-weight: bold;
-}
-
-.projectFactsWrap .item p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
-  margin: 0;
-  padding: 10px;
-  font-family: "Open Sans";
-}
-
-.projectFactsWrap .item span {
-  width: 60px;
-  background: rgba(255, 255, 255, 0.8);
-  height: 2px;
-  display: block;
-  margin: 0 auto;
-}
-
-.projectFactsWrap .item i {
-  vertical-align: middle;
+.content .box .counter {
   font-size: 50px;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  color: #f2f2f2;
+  font-family: sans-serif;
 }
-
-.projectFactsWrap .item:hover i,
-.projectFactsWrap .item:hover p {
-  color: white;
+.content .box .text {
+  font-weight: 400;
+  color: #ccc;
 }
-
-.projectFactsWrap .item:hover span {
-  background: white;
-}
-
-@media (max-width: 786px) {
-  .projectFactsWrap .item {
-    flex: 0 0 50%;
+@media screen and (max-width: 1036px) {
+  .counter-up {
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box {
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
   }
 }
-
-.trans {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  transition: all 500ms ease;
+@media screen and (max-width: 580px) {
+  .counter-up .content .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .counter-up {
+    padding: 30px 20px 0 20px;
+  }
 }
 
 /************************************************************ Contact us **********************************************/
@@ -856,7 +807,7 @@ footer {
   }
 
   .navbar-brand {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 20px !important;
     font-weight: 400;
     color: #e5c09d;
